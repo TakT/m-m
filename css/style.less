@@ -897,6 +897,9 @@ form {
 }
 
 @media (min-width: 768px) {
+	.container {
+		width: 900px;
+	}
 	.modal-dialog {
 	    width: 660px;
 	    margin: 30px auto;
@@ -905,6 +908,24 @@ form {
 	    }
 	}
 }
+
+@media (min-width: 960px) {
+	.container {
+		width: 900px;
+	}
+	header {
+		.navigation__wrapper {
+			padding-right: 15px;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+	    width: 1170px;
+	}
+}
+
 .faq {
 	.item .item__answer {
 	    display: none;
@@ -913,6 +934,31 @@ form {
 	    display: block;
 	}
 }
+@media (max-width: 1200px) {
+	.content {
+		.form-registration {
+			input{
+				margin-right: 82px;
+				max-width: 321px;
+			}
+			.btn-red {
+				margin-left: -87px;
+			}
+		}
+		.title_form_registration {
+			text-align: right;
+			font-size: 60px;
+		}
+		.m-red {
+			width: 400px;
+		}
+		&.main-content .shar {
+			width: 240px;
+			right: 0;
+		}
+	}
+}
+
 @media (max-width: 768px) {
 	.content-box {
 		&:before {
