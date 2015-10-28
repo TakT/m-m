@@ -191,7 +191,7 @@ header {
 	    top: -17px;
 	    bottom: 0;
 	    background: url('../images/snow2.png') repeat-y 100% 0;
-	    width: 1290px;
+	    // width: 1290px;
 	    margin: 0 auto;
 	    right: 50%;
 	    margin: 0 -645px 0 0;
@@ -467,7 +467,7 @@ footer {
 			}
 			.slider-text {
 				&.right {
-					right: -45px;
+					right: -57px;
 				}
 				&.left {
 					left: -45px;
@@ -937,6 +937,7 @@ form {
 @media (max-width: 1200px) {
 	.content {
 		.form-registration {
+			margin-top: 60px;
 			input{
 				margin-right: 82px;
 				max-width: 321px;
@@ -955,6 +956,42 @@ form {
 		&.main-content .shar {
 			width: 240px;
 			right: 0;
+		}
+	}
+	footer {
+		.footer_block_text {
+			.footer_solial {
+				font-size: 17px;
+				a {
+					margin-left: 2px;
+				}
+			}
+		}
+	    .footer-slider {
+	    	.block-footer-slider {
+				padding: 40px;
+				.slider-text {
+					font-size: 16px;
+					&.left {
+						left: -19px;
+						bottom: 15px;
+					}
+					&.right {
+						right: -50px;
+					}
+				}
+	    	}
+		}
+		.bottom_footer {
+			padding-top: 25px;
+			.bottom_footer_nav {
+				display: table;
+				width: 100%;
+				li {
+					display: table-cell;
+					width: 1%;
+				}
+			}
 		}
 	}
 }
