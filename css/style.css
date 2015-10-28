@@ -1,0 +1,5 @@
+footer .footer_block_text .footer_solial a {
+	-moz-border-radius: 150px / 115px;
+	-webkit-border-radius: 150px / 115px;
+	border-radius: 150px / 115px;
+}
