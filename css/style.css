@@ -1,5 +1,20 @@
 footer .footer_block_text .footer_solial a {
+	-moz-border-radius: 40px / 34px;
+	-webkit-border-radius: 40px / 34px;
+	border-radius: 40px / 34px;
+}
+footer .footer-slider .block-footer-slider button {
+	-moz-border-radius: 40px / 34px;
+	-webkit-border-radius: 40px / 34px;
+	border-radius: 40px / 34px;
+}
+.btn-red {
 	-moz-border-radius: 150px / 115px;
 	-webkit-border-radius: 150px / 115px;
 	border-radius: 150px / 115px;
+}
+.modal .social__auth li a {
+	-moz-border-radius: 92px / 72px;
+	-webkit-border-radius: 92px / 72px;
+	border-radius: 92px / 72px;
 }
