@@ -14,6 +14,11 @@ $(document).ready(function() {
 	jQuery('.js-sms__checkbox-toggle input').on('ifChanged', function() {
 		jQuery(this).parents('fieldset').find('.sms__code').toggleClass('hide');
 	});
+
+	jQuery('input').iCheck({
+		checkboxClass: 'icheckbox_minimal',
+		increaseArea: '20%' // optional
+	});
 });
 
 $(window).load(function() {
