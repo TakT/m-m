@@ -894,4 +894,92 @@ form {
 	.modal legend {
 		font-size: 47px;
 	}
+	.modal {
+		.modal-header .close {
+			right: 10px;
+			top: -60px;
+			.ico {
+				background-position: -48px -186px;
+			}
+		}
+		.modal-dialog {
+			&:after,
+			&:before {
+				display: none;
+			}
+		}
+		.social__auth {
+			ul {
+				margin-bottom: 30px;
+			}
+			li {
+				padding: 0 5px;
+				a {
+					width: 72px;
+					height: 52px;
+					.fa {
+						padding-top: 11px;
+						font-size: 32px;
+					}
+				}
+			}
+		}
+		.modal-lg {
+			.modal-content {
+				> div {
+					padding: 0 25px;
+				}
+			}
+		}
+		.modal__form-submit {
+			text-align: center;
+			> div:first-child {
+				padding-right: 15px;
+			}
+			> div:last-child {
+				padding-left: 15px;
+			}
+		}
+		.remind {
+			margin-bottom: 20px;
+		}
+		.sms__code {
+			ul {
+				text-align: center;
+			}
+		}
+	}
+	form {
+		&.form-horizontal {
+			.form-group {
+				margin-bottom: 15px;
+			}
+			.control-label {
+				padding-top: 0;
+				margin-left: 15px;
+			}
+		}
+		.birthday__select {
+			> div {
+				display: inline-block;
+				margin-bottom: 10px;
+			}
+			input {
+				width: 50px;
+			}
+			select {
+				width: 129px;
+			}
+		}
+	}
+	#registration_1 {
+		.modal-dialog {
+			margin-top: 100px;
+		}
+		.sms__checkbox {
+			 ul li.sms__checkbox-label {
+			 	width: 140px;
+			 }
+		}
+	}
 }
