@@ -93,6 +93,10 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+a, a:focus {
+    outline: none;
+    text-decoration: none;
+}
 html {
 	min-height: 100%;
 	position: relative;
@@ -207,6 +211,7 @@ header {
 }
 .content-box {
 	display: block;
+    overflow: hidden;
 	position: relative;
 	background-image: -moz-linear-gradient( 90deg, rgb(255,173,1) 0%, rgb(255,204,0) 50%, rgb(255,181,0) 100%);
 	background-image: -webkit-linear-gradient( 90deg, rgb(255,173,1) 0%, rgb(255,204,0) 50%, rgb(255,181,0) 100%);
@@ -263,6 +268,9 @@ header {
     }
 }
 .content {
+	.el2 {
+		display: none;
+	}
 	.el {
 		position: absolute;
 		left: -95px;
@@ -423,7 +431,7 @@ footer {
     		width: 100%;
     		// overflow: hidden;
 		    margin-top: -20px;
-	        padding: 0 60px;
+	        padding: 0 42px;
 	        position: relative;
 	        .slick-list {
 	        	overflow: hidden;
@@ -469,6 +477,52 @@ footer {
 				img {
 					position: absolute;
 					bottom: 0;
+				}
+			}
+			@media (min-width: 1200px) {
+				.priz-item4 {
+					width: 258px!important;
+					.left {
+					    left: 6px!important;
+					}
+				}
+				.priz-item5 {
+				    width: 178px!important;
+					.left {
+					    left: 6px!important;
+					}
+				}
+			}
+			@media (min-width: 860px) and (max-width: 1200px) {
+				.priz-item6 {
+				    width: 218px!important;
+					.left {
+				        left: -35px!important;
+					}
+				}
+				.priz-item4 {
+				    width: 258px!important;
+					.left {
+					    left: 17px!important;
+					}
+				}
+				.priz-item5 {
+				    width: 218px!important;
+					.left {
+			           	left: 41px!important;
+					}
+				}
+				.priz-item3 {
+				    width: 258px!important;
+					.left {
+					    left: -21px!important;
+					}
+				}
+				.priz-item9 {
+					.left {
+					    left: -19px!important;
+				        bottom: 28px!important;
+					}
 				}
 			}
 			.slider-text {
@@ -1024,8 +1078,26 @@ form {
 		}
 	}
 }
-
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 960px) {
+	.container {
+	    width: 100%;
+	}
+	header .navigation__wrapper {
+	     padding-right: 15px; 
+	    padding-top: 36px;
+	}
+	.content .el {
+	    position: absolute;
+	    left: -95px;
+	    top: 10px;
+	    z-index: 1;
+	    width: 122%;
+	}
+	.content .m-yellow, .content .m-red {
+	    width: 363px;
+	}
+}
+@media (max-width: 767px) {
 	.content-box {
 		&:before {
 			width: 100%;
@@ -1170,6 +1242,7 @@ form {
 		}
 		.form-registration {
 			margin-top: 25px;
+		    max-width: 100%!important;
 			input {
 				margin-right: auto;
 			}
