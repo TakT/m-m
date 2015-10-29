@@ -57,6 +57,12 @@ body {
 	height: 84px;
 }
 
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
 .prizes-blocks {
 	position: absolute;
 	z-index: -1;
@@ -104,7 +110,7 @@ body {
 	.page__title {
 		color: @red;
 		font-size: 80px;
-		line-height: 38px;
+		line-height: 74px;
 		margin-bottom: 40px;
 	}
 	.m-red-lk {
@@ -177,15 +183,14 @@ body {
 			background-color: #fff;
 			th,
 			td {
-
+				text-transform: uppercase;
 			}
 		}
 	}
 	tbody {
-		background-color: rgba(255, 255, 255, 0.7);
 		tr {
 			td {
-
+				background-color: rgba(255, 255, 255, 0.7);
 			}
 		}
 	}
@@ -292,6 +297,139 @@ form {
 		span {
 			display: block;
 			font-size: 30px;
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+	.prizes-blocks {
+		.prize-1 {
+			left: 270px;
+		}
+	}
+	.ico-prize-1 {
+		background-position: -60px 0px;
+		width: 94px;
+		height: 99px;
+		background-size: 250px 296px;
+	}
+}
+
+@media (max-width: 768px) {
+	body {
+		&.inner-page {
+			.content {
+				margin-top: 20px;
+			}
+		}
+	}
+	.content {
+		.page__title {
+			font-size: 44px;
+			line-height: 50px;
+			text-align: center;
+			margin-bottom: 20px;
+		}
+	}
+	.nav-tabs {
+		> li {
+			> a {
+				font-size: 20px;
+				span {
+					border-bottom-width: 2px;
+				}
+			}
+		}
+	}
+	.tab-content {
+		padding: 20px 10px;
+		form {
+			fieldset,
+			legend {
+				margin-bottom: 20px;
+			}
+		}
+	}
+	.table {
+		thead {
+			display: none;
+		}
+		tbody {
+			tr {
+				td {
+					display: block;
+					width: 100%;
+					border-color: #FFC000;
+					> span {
+						width: 30%;
+						vertical-align: top;
+						font-family: 'Conv_Panton-BlackItalic';
+						text-transform: uppercase;
+						&.table__value {
+							width: 70%;
+							display: inline-block;
+							font-family: 'Panton-BoldItalic';
+						}
+					}
+					&.table__number {
+						text-align: center;
+						background-color: transparent;
+						font-size: 24px;
+						font-family: 'Conv_Panton-BlackItalic';
+						> span {
+							display: inline;
+							width: auto;
+							&.table__value {
+								font-size: 24px;
+								font-family: 'Conv_Panton-BlackItalic';
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.pagination {
+		ul {
+			position: relative;
+			li {
+				&.next,
+				&.prev {
+					display: block;
+				}
+				&.next {
+					margin-left: 55px;
+				}
+				&.prev {
+					position: absolute;
+					bottom: 0;
+					right: 0;
+					left: -40px;
+				}
+			}
+		}
+	}
+
+	.social-auth-info {
+		padding: 10px 15px;
+		margin-bottom: 20px;
+		.avatar {
+		}
+		.title {
+			font-size: 12px;
+			margin-bottom: 5px;
+		}
+		.description {
+			font-size: 11px;
+		}
+	}
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	.prizes-blocks {
+		.prize-1 {
+			display: none;
 		}
 	}
 }
