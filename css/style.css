@@ -18,3 +18,6 @@ footer .footer-slider .block-footer-slider button {
 	-webkit-border-radius: 92px / 72px;
 	border-radius: 92px / 72px;
 }
+.pagination ul a {
+	border-radius: 40px/34px;
+}
