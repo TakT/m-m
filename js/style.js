@@ -9,7 +9,7 @@ $(document).ready(function() {
 				slidesToScroll: 2,
 			}
 		}, {
-			breakpoint: 768,
+			breakpoint: 860,
 			settings: {
 				slidesToShow: 1,
 				slidesToScroll: 1,
@@ -34,6 +34,21 @@ $(document).ready(function() {
 	jQuery('input').iCheck({
 		checkboxClass: 'icheckbox_minimal',
 		increaseArea: '20%' // optional
+	});
+
+	jQuery('.js-menu__switch-link').on('click', function(event) {
+		event.preventDefault();
+
+		if (jQuery(this).parents('.js-mobilemenu-toggle').length) {
+			if (jQuery(this).hasClass('active')) {
+				jQuery(this).removeClass('active');
+			} else {
+				jQuery(this).addClass('active');
+			}
+		} else {
+			jQuery('.js-mobilemenu-toggle .js-menu__switch-link').removeClass('active');
+		}
+		jQuery(this).parents('.navigation__wrapper').find('.header-nav').toggleClass('active');
 	});
 });
 
