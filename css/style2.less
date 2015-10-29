@@ -79,6 +79,17 @@ body {
 	top: -15px;
 	left: -10px;
 	z-index: 503;
+	.sandwich_active {
+		display: none;
+	}
+	&.active {
+		img {
+			display: none;
+		}
+		.sandwich_active {
+			display: block;
+		}
+	}
 }
 
 .prizes-blocks {

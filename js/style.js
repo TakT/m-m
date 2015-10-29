@@ -40,13 +40,13 @@ $(document).ready(function() {
 		event.preventDefault();
 
 		if (jQuery(this).parents('.js-mobilemenu-toggle').length) {
-			if (jQuery(this).hasClass('active')) {
-				jQuery(this).removeClass('active');
+			if (jQuery(this).parents('.js-mobilemenu-toggle').hasClass('active')) {
+				jQuery(this).parents('.js-mobilemenu-toggle').removeClass('active');
 			} else {
-				jQuery(this).addClass('active');
+				jQuery(this).parents('.js-mobilemenu-toggle').addClass('active');
 			}
 		} else {
-			jQuery('.js-mobilemenu-toggle .js-menu__switch-link').removeClass('active');
+			jQuery('.js-mobilemenu-toggle').removeClass('active');
 		}
 		jQuery(this).parents('.navigation__wrapper').find('.header-nav').toggleClass('active');
 	});
