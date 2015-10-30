@@ -3,7 +3,7 @@
 
 body {
 	&.collPadding {
-		.content [class^="col-"] {
+		.content [class*="col-"] {
 			padding-right: 15px;
 			padding-left: 15px;
 		}
@@ -70,7 +70,7 @@ body {
 }
 
 .img-responsive {
-	display: block;
+	display: inline-block;
 	max-width: 100%;
 	height: auto;
 }
@@ -361,6 +361,106 @@ form {
 	}
 }
 
+.steps {
+	.step {
+		margin-bottom: 30px;
+		.step__title {
+			color: @red;
+			font-size: 46px;
+			margin-bottom: 25px;
+			.step__number {
+				color: #ffc300;
+				font-size: 46px;
+				display: inline-block;
+				width: 55px;
+				height: 50px;
+				background-color: @red;
+				border-top-left-radius: 160px 136px;
+				border-top-right-radius: 160px 136px;
+				border-bottom-right-radius: 160px 136px;
+				border-bottom-left-radius: 160px 136px;
+				text-align: center;
+				line-height: 42px;
+				margin-right: 10px;
+				vertical-align: top;
+			}
+			.step__title-inner {
+				width: 74%;
+				display: inline-block;
+			}
+		}
+		.step__content {
+			padding-left: 70px;
+			&.step__grid {
+				padding-left: 50px;
+				.grid__item {
+					margin-bottom: 20px;
+					text-align: center;
+					&:nth-child(3) {
+						clear: both;
+					}
+					.item__title {
+						color: @red;
+						font-size: 16px;
+					}
+				}
+			}
+			&.step__prizes {
+				ul {
+					margin-bottom: 55px;
+				}
+				.prize-item {
+					margin: 0 15px;
+					margin-bottom: 30px;
+					text-align: center;
+					vertical-align: top;
+					padding: 0;
+					width: 180px;
+					.prize-img {
+						width: 180px;
+						height: 180px;
+						background-color: #fff;
+						border-radius: 50%;
+						margin-bottom: 15px;
+						img {
+							margin-top: -15px;
+							height: 200px;
+						}
+						&.prize-img-offset-left {
+							img {
+								margin-left: -15px;
+							}
+						}
+					}
+					.prize-text {
+						color: @red;
+						font-size: 17px;
+						font-family: 'Conv_Panton-BlackItalic';
+						text-transform: uppercase;
+					}
+				}
+			}
+		}
+	}
+	.steps__disclaimer {
+		color: @red;
+		font-size: 24px;
+		font-family: 'Panton-SemiBoldItalic';
+		text-transform: uppercase;
+		a {
+			color: @red;
+			font-family: 'Conv_Panton-BlackItalic';
+			text-decoration: underline;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+	.m-red-lk {
+		margin-top: 0;
+	}
+}
+
 @media (max-width: 1200px) {
 	.prizes-blocks {
 		.prize-1 {
@@ -519,6 +619,43 @@ form {
 			}
 			&.active {
 				display: block;
+			}
+		}
+	}
+
+	.steps {
+		.step {
+			.step__title {
+				font-size: 30px;
+			}
+			.step__content {
+				padding: 0;
+				&.step__grid {
+					padding: 0;
+					.grid__item {
+						.item__img {
+							img {
+								.img-responsive();
+							}
+						}
+					}
+				}
+				&.step__prizes {
+					padding: 0;
+					.prize-item {
+						display: block;
+						width: 100%;
+						margin-left: 0;
+						margin-right: 0;
+						.prize-img {
+							margin: 0 auto;
+							margin-bottom: 15px;
+						}
+					}
+				}
+				.step__blank_code {
+					.img-responsive();
+				}
 			}
 		}
 	}
