@@ -75,6 +75,13 @@ body {
 	height: auto;
 }
 
+.btn {
+	&.btn-question {
+		line-height: 30px;
+		padding: 35px 28px;
+	}
+}
+
 .js-mobilemenu-toggle {
 	top: -15px;
 	left: -10px;
@@ -461,6 +468,61 @@ form {
 	}
 }
 
+.faq {
+	.item {
+		margin-bottom: 35px;
+		.item__title {
+			a {
+				color: @red;
+				font-size: 24px;
+				font-family: 'Conv_Panton-BlackItalic';
+				text-decoration: none;
+				border-bottom: 2px dashed @red;
+				text-transform: uppercase;
+				&:hover {
+					border-bottom-color: transparent;
+				}
+			}
+		}
+		.item__answer {
+			color: @red;
+			background-color: #fff;
+			font-size: 16px;
+			line-height: 22px;
+			font-family: 'Panton-SemiBoldItalic';
+			padding: 20px 25px;
+			position: relative;
+			margin-top: 20px;
+			margin-left: 20px;
+			margin-right: 20px;
+
+			&:before,
+			&:after {
+				content: "";
+				position: absolute;
+				top: 0;
+				width: 20px;
+				height: 100%;
+			}
+
+			&:before {
+				background: url(../images/faq_body_bg_left.png) repeat-y;
+				left: -20px;
+			}
+
+			&:after {
+				background: url(../images/faq_body_bg_right.png) repeat-y;
+				right: -20px;
+			}
+		}
+		&.active {
+			a {
+				border-bottom-color: transparent;
+			}
+		}
+	}
+}
+
 @media (max-width: 1200px) {
 	.prizes-blocks {
 		.prize-1 {
@@ -475,7 +537,7 @@ form {
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	body {
 		&.inner-page {
 			.content {
@@ -655,6 +717,27 @@ form {
 				}
 				.step__blank_code {
 					.img-responsive();
+				}
+			}
+		}
+	}
+	.faq__question {
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	.faq {
+		.item {
+			margin-bottom: 20px;
+			.item__title {
+				a {
+					font-size: 20px;
+					line-height: 29px;
+				}
+			}
+			&.active {
+				.item__answer {
+					margin-top: 10px;
 				}
 			}
 		}
