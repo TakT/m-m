@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>MM5</title>
+
+<script src="http://code.createjs.com/easeljs-0.8.1.min.js"></script>
+<script src="http://code.createjs.com/tweenjs-0.6.1.min.js"></script>
+<script src="http://code.createjs.com/movieclip-0.8.1.min.js"></script>
+<script src="http://code.createjs.com/preloadjs-0.6.1.min.js"></script>
+<script src="MM5.js"></script>
+
+<script>
+var canvas, stage, exportRoot, preloaderCount, preload0 ,preload1,preload2;
+
+function init() {
+	//v 0.6
+	canvas = document.getElementById("canvas");
+	images = images||{};
+	
+	stage = new createjs.Stage(canvas);
+	stage.addChild(exportRoot);
+	stage.update();
+
+	loader = new createjs.LoadQueue(false);
+	loader.addEventListener("fileload", handleFileLoad);
+	loader.addEventListener("complete", handleComplete);
+	loader.loadManifest(lib.properties.manifest);
+	
+	preloaderCount=0;
+	
+
+	
+	//фон для прелодера
+	var imgBackground = new Image();
+	imgBackground.onload = handleImageLoad;
+	imgBackground.src = "images/preload0.jpg";
+	preload0 = new createjs.Bitmap(imgBackground);
+	preload0.x=397;
+	preload0.y=298;
+	stage.addChild(preload0);
+	
+	var imgBackground = new Image();
+	imgBackground.onload = handleImageLoad;
+	imgBackground.src = "images/preload1.png";	
+	preload1 = new createjs.Bitmap(imgBackground);
+	preload1.x=-8;
+	preload1.y=307;
+	stage.addChild(preload1);
+	
+	var imgBackground = new Image();
+	imgBackground.onload = handleImageLoad;
+	imgBackground.src = "images/preload2.png";
+	preload2 = new createjs.Bitmap(imgBackground);
+	preload2.x=0;
+	preload2.y=298;
+	stage.addChild(preload2);
+	
+	
+
+
+	loader.addEventListener("progress", handleProgress);
+	stage.update();
+}
+
+function handleImageLoad() {
+preloaderCount++;
+ 
+}
+
+function handleProgress(){
+	if (preloaderCount==3) {
+		preload1.x = Math.round(loader.progress*100)*4.2-8;		
+		stage.update();
+	}
+	
+	//stage.update();
+}
+
+function handleFileLoad(evt) {
+	if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
+}
+
+function handleComplete(evt) {
+	exportRoot = new lib.MM5();
+	
+	stage.removeChild(preload0);
+	stage.removeChild(preload1);
+	stage.removeChild(preload2);
+	
+	stage.removeChild(exportRoot);
+	stage = new createjs.Stage(canvas);
+	stage.addChild(exportRoot);
+	stage.update();
+	stage.enableMouseOver();
+
+createjs.Ticker.setFPS(60);		
+createjs.Ticker.addEventListener("tick", stage);	
+createjs.Touch.enable(stage);
+
+	window.addEventListener('keydown', keyPressed, true);
+	window.addEventListener('keyup', keyPressedup, true);
+}
+
+function keyPressed(event) {
+    //alert (event.keyCode)
+     switch(event.keyCode) {
+        case 37:
+           exportRoot.keyLEFT = true;
+            break;  
+		case 38:
+           exportRoot.keyUP = true;
+            break; 
+        case 39:
+            exportRoot.keyRIGHT = true;
+            break;
+        case 40:
+           exportRoot.keyDOWN = true;            
+            break;
+    }
+    
+    //update the stage after keypress
+    stage.update();
+}
+
+function keyPressedup(event) {
+      //alert (up)
+     switch(event.keyCode) {
+        case 37:
+           exportRoot.keyLEFT = false;
+            break;  
+		case 38:
+           exportRoot.keyUP = false;
+            break; 
+        case 39:
+            exportRoot.keyRIGHT = false;
+            break;
+        case 40:
+           exportRoot.keyDOWN = false;            
+            break;
+    }
+    
+    //update the stage after keypress
+    stage.update();
+}
+</script>
+</head>
+
+<body onload="init();" style="background-color:#D4D4D4">
+	<canvas id="canvas" width="1252" height="647" style="background-color:#FEC400"></canvas>
+</body>
+</html>

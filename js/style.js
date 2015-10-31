@@ -50,8 +50,14 @@ $(document).ready(function() {
 		}
 		jQuery(this).parents('.navigation__wrapper').find('.header-nav').toggleClass('active');
 	});
+	if(window.innerHeight > window.innerWidth){
+	    $('.cap').show();
+	    $('#canvas').hide();
+	} else {
+		$('.cap').hide();
+		$('#canvas').show();
+	}
 });
-
 $(window).load(function() {
 	heigFooter = $('footer').outerHeight();
 	$('body').css('paddingBottom', heigFooter);
@@ -59,4 +65,11 @@ $(window).load(function() {
 $(window).resize(function() {
 	heigFooter = $('footer').outerHeight();
 	$('body').css('paddingBottom', heigFooter);
+	if(window.innerHeight > window.innerWidth){
+	    $('.cap').show();
+	    $('#canvas').hide();
+	} else {
+		$('.cap').hide();
+		$('#canvas').show();
+	}
 });
