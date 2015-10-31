@@ -309,6 +309,63 @@ header {
 	    padding: 46px 28px;
     }
 }
+.error {
+	input {
+		background-image: -moz-linear-gradient( 90deg, rgb(255,255,255) 0%, rgb(253,133,111) 100%);
+		background-image: -webkit-linear-gradient( 90deg, rgb(255,255,255) 0%, rgb(253,133,111) 100%);
+		background-image: -ms-linear-gradient( 90deg, rgb(255,255,255) 0%, rgb(253,133,111) 100%);
+	}
+}
+input.error {
+	background-image: -moz-linear-gradient( 90deg, rgb(255,255,255) 0%, rgb(253,133,111) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(255,255,255) 0%, rgb(253,133,111) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(255,255,255) 0%, rgb(253,133,111) 100%);
+}
+.errorMessage {
+	position: absolute;
+	top: -42px;
+	right: 0;
+	background: #fff;
+    padding: 11px 14px 0;
+	border-radius: 20px;
+	z-index: 5;
+	-webkit-box-shadow: 0px -3px 5px 0px rgba(50, 50, 50, 0.5);
+	-moz-box-shadow:    0px -3px 5px 0px rgba(50, 50, 50, 0.5);
+	box-shadow:         0px -3px 5px 0px rgba(50, 50, 50, 0.5);
+	&:before {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		top: 0;
+		left: 0;
+		width: 100%;
+		border-radius: 20px;
+		background-image: -moz-linear-gradient( 90deg, rgba(0,0,0, 0.1) 0%, rgb(255,255,255) 100%);
+		background-image: -webkit-linear-gradient( 90deg, rgba(0,0,0, 0.1) 0%, rgb(255,255,255) 100%);
+		background-image: -ms-linear-gradient( 90deg, rgba(0,0,0, 0.1) 0%, rgb(255,255,255) 100%);
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		bottom: -7px;
+		width: 18px;
+		height: 7px;
+		right: 50%;
+		margin-right: -9px;
+		background: url('../images/message-error-after.png');
+	}
+	p {
+		font-size: 15px;
+		font-family: 'Conv_Panton-ExtraBoldItalic';
+		color: rgb(83, 22, 0);
+		font-weight: bold;
+		font-style: italic;
+		text-transform: uppercase;
+		line-height: 1.267;
+		margin-bottom: 10px;
+		position: relative;
+	}
+}
 .ico-scroll {
 	position: fixed;
 	bottom: 10px;
@@ -1118,6 +1175,7 @@ form {
 	}
 	.form-group {
 		margin-bottom: 25px;
+		position: relative;
 	}
 	.form-control {
 		height: 50px;
@@ -1125,7 +1183,7 @@ form {
 		font-size: 18px;
 		padding-left: 14px;
 		font-family: 'Panton-SemiBoldItalic';
-		border: 1px solid rgba(217, 217, 217, 0.5);
+		border: 2px solid #fff;
 		box-shadow: 0px -1px 1px 0px rgba(0, 0, 0, 0.3);
 	}
 	&.form-horizontal {
