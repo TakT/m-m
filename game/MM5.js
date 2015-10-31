@@ -9,45 +9,45 @@ lib.properties = {
 	fps: 24,
 	color: "#FFFFFF",
 	manifest: [
-		{src:"images/Растровоеизображение10.png", id:"Растровоеизображение10"},
-		{src:"images/Растровоеизображение11.png", id:"Растровоеизображение11"},
-		{src:"images/Растровоеизображение12.png", id:"Растровоеизображение12"},
-		{src:"images/Растровоеизображение19.png", id:"Растровоеизображение19"},
-		{src:"images/Растровоеизображение20.png", id:"Растровоеизображение20"},
-		{src:"images/Растровоеизображение21.png", id:"Растровоеизображение21"},
-		{src:"images/Растровоеизображение22.png", id:"Растровоеизображение22"},
-		{src:"images/Растровоеизображение23.png", id:"Растровоеизображение23"},
-		{src:"images/Растровоеизображение24.png", id:"Растровоеизображение24"},
-		{src:"images/Растровоеизображение25.png", id:"Растровоеизображение25"},
-		{src:"images/Растровоеизображение26.png", id:"Растровоеизображение26"},
-		{src:"images/Растровоеизображение27.png", id:"Растровоеизображение27"},
-		{src:"images/Растровоеизображение3.png", id:"Растровоеизображение3"},
-		{src:"images/Растровоеизображение33.png", id:"Растровоеизображение33"},
-		{src:"images/Растровоеизображение34.png", id:"Растровоеизображение34"},
-		{src:"images/Растровоеизображение37.png", id:"Растровоеизображение37"},
-		{src:"images/Растровоеизображение38.png", id:"Растровоеизображение38"},
-		{src:"images/Растровоеизображение39.png", id:"Растровоеизображение39"},
-		{src:"images/Растровоеизображение4.png", id:"Растровоеизображение4"},
-		{src:"images/Растровоеизображение40.png", id:"Растровоеизображение40"},
-		{src:"images/Растровоеизображение41.png", id:"Растровоеизображение41"},
-		{src:"images/Растровоеизображение42.png", id:"Растровоеизображение42"},
-		{src:"images/Растровоеизображение43.png", id:"Растровоеизображение43"},
-		{src:"images/Растровоеизображение44.png", id:"Растровоеизображение44"},
-		{src:"images/Растровоеизображение45.png", id:"Растровоеизображение45"},
-		{src:"images/Растровоеизображение46.png", id:"Растровоеизображение46"},
-		{src:"images/Растровоеизображение5.png", id:"Растровоеизображение5"},
-		{src:"images/Растровоеизображение51.png", id:"Растровоеизображение51"},
-		{src:"images/Растровоеизображение52.png", id:"Растровоеизображение52"},
-		{src:"images/Растровоеизображение53.png", id:"Растровоеизображение53"},
-		{src:"images/Растровоеизображение54.png", id:"Растровоеизображение54"},
-		{src:"images/Растровоеизображение55.png", id:"Растровоеизображение55"},
-		{src:"images/Растровоеизображение6.png", id:"Растровоеизображение6"},
-		{src:"images/Растровоеизображение67.png", id:"Растровоеизображение67"},
-		{src:"images/Растровоеизображение68.png", id:"Растровоеизображение68"},
-		{src:"images/Растровоеизображение7.png", id:"Растровоеизображение7"},
-		{src:"images/Растровоеизображение75.jpg", id:"Растровоеизображение75"},
-		{src:"images/Растровоеизображение8.png", id:"Растровоеизображение8"},
-		{src:"images/Растровоеизображение9.png", id:"Растровоеизображение9"},
+		{src:"images/graphics10.png", id:"graphics10"},
+		{src:"images/graphics11.png", id:"graphics11"},
+		{src:"images/graphics12.png", id:"graphics12"},
+		{src:"images/graphics19.png", id:"graphics19"},
+		{src:"images/graphics20.png", id:"graphics20"},
+		{src:"images/graphics21.png", id:"graphics21"},
+		{src:"images/graphics22.png", id:"graphics22"},
+		{src:"images/graphics23.png", id:"graphics23"},
+		{src:"images/graphics24.png", id:"graphics24"},
+		{src:"images/graphics25.png", id:"graphics25"},
+		{src:"images/graphics26.png", id:"graphics26"},
+		{src:"images/graphics27.png", id:"graphics27"},
+		{src:"images/graphics3.png", id:"graphics3"},
+		{src:"images/graphics33.png", id:"graphics33"},
+		{src:"images/graphics34.png", id:"graphics34"},
+		{src:"images/graphics37.png", id:"graphics37"},
+		{src:"images/graphics38.png", id:"graphics38"},
+		{src:"images/graphics39.png", id:"graphics39"},
+		{src:"images/graphics4.png", id:"graphics4"},
+		{src:"images/graphics40.png", id:"graphics40"},
+		{src:"images/graphics41.png", id:"graphics41"},
+		{src:"images/graphics42.png", id:"graphics42"},
+		{src:"images/graphics43.png", id:"graphics43"},
+		{src:"images/graphics44.png", id:"graphics44"},
+		{src:"images/graphics45.png", id:"graphics45"},
+		{src:"images/graphics46.png", id:"graphics46"},
+		{src:"images/graphics5.png", id:"graphics5"},
+		{src:"images/graphics51.png", id:"graphics51"},
+		{src:"images/graphics52.png", id:"graphics52"},
+		{src:"images/graphics53.png", id:"graphics53"},
+		{src:"images/graphics54.png", id:"graphics54"},
+		{src:"images/graphics55.png", id:"graphics55"},
+		{src:"images/graphics6.png", id:"graphics6"},
+		{src:"images/graphics67.png", id:"graphics67"},
+		{src:"images/graphics68.png", id:"graphics68"},
+		{src:"images/graphics7.png", id:"graphics7"},
+		{src:"images/graphics75.jpg", id:"graphics75"},
+		{src:"images/graphics8.png", id:"graphics8"},
+		{src:"images/graphics9.png", id:"graphics9"},
 		{src:"images/_123123.jpg", id:"_123123"},
 		{src:"images/_20_1.jpg", id:"_20_1"},
 		{src:"images/_20_106666.jpg", id:"_20_106666"},
@@ -64,236 +64,236 @@ lib.properties = {
 
 
 
-(lib.Растровоеизображение10 = function() {
-	this.initialize(img.Растровоеизображение10);
+(lib.graphics10 = function() {
+	this.initialize(img.graphics10);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,45,71);
 
 
-(lib.Растровоеизображение11 = function() {
-	this.initialize(img.Растровоеизображение11);
+(lib.graphics11 = function() {
+	this.initialize(img.graphics11);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,45,71);
 
 
-(lib.Растровоеизображение12 = function() {
-	this.initialize(img.Растровоеизображение12);
+(lib.graphics12 = function() {
+	this.initialize(img.graphics12);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,45,71);
 
 
-(lib.Растровоеизображение19 = function() {
-	this.initialize(img.Растровоеизображение19);
+(lib.graphics19 = function() {
+	this.initialize(img.graphics19);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,474,640);
 
 
-(lib.Растровоеизображение20 = function() {
-	this.initialize(img.Растровоеизображение20);
+(lib.graphics20 = function() {
+	this.initialize(img.graphics20);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,655,611);
 
 
-(lib.Растровоеизображение21 = function() {
-	this.initialize(img.Растровоеизображение21);
+(lib.graphics21 = function() {
+	this.initialize(img.graphics21);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,542,574);
 
 
-(lib.Растровоеизображение22 = function() {
-	this.initialize(img.Растровоеизображение22);
+(lib.graphics22 = function() {
+	this.initialize(img.graphics22);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,102,102);
 
 
-(lib.Растровоеизображение23 = function() {
-	this.initialize(img.Растровоеизображение23);
+(lib.graphics23 = function() {
+	this.initialize(img.graphics23);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,102,102);
 
 
-(lib.Растровоеизображение24 = function() {
-	this.initialize(img.Растровоеизображение24);
+(lib.graphics24 = function() {
+	this.initialize(img.graphics24);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,102,102);
 
 
-(lib.Растровоеизображение25 = function() {
-	this.initialize(img.Растровоеизображение25);
+(lib.graphics25 = function() {
+	this.initialize(img.graphics25);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,102,102);
 
 
-(lib.Растровоеизображение26 = function() {
-	this.initialize(img.Растровоеизображение26);
+(lib.graphics26 = function() {
+	this.initialize(img.graphics26);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,186,215);
 
 
-(lib.Растровоеизображение27 = function() {
-	this.initialize(img.Растровоеизображение27);
+(lib.graphics27 = function() {
+	this.initialize(img.graphics27);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,131,159);
 
 
-(lib.Растровоеизображение3 = function() {
-	this.initialize(img.Растровоеизображение3);
+(lib.graphics3 = function() {
+	this.initialize(img.graphics3);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,45,71);
 
 
-(lib.Растровоеизображение33 = function() {
-	this.initialize(img.Растровоеизображение33);
+(lib.graphics33 = function() {
+	this.initialize(img.graphics33);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,42,57);
 
 
-(lib.Растровоеизображение34 = function() {
-	this.initialize(img.Растровоеизображение34);
+(lib.graphics34 = function() {
+	this.initialize(img.graphics34);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,37,57);
 
 
-(lib.Растровоеизображение37 = function() {
-	this.initialize(img.Растровоеизображение37);
+(lib.graphics37 = function() {
+	this.initialize(img.graphics37);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,490,589);
 
 
-(lib.Растровоеизображение38 = function() {
-	this.initialize(img.Растровоеизображение38);
+(lib.graphics38 = function() {
+	this.initialize(img.graphics38);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,468,635);
 
 
-(lib.Растровоеизображение39 = function() {
-	this.initialize(img.Растровоеизображение39);
+(lib.graphics39 = function() {
+	this.initialize(img.graphics39);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,351,524);
 
 
-(lib.Растровоеизображение4 = function() {
-	this.initialize(img.Растровоеизображение4);
+(lib.graphics4 = function() {
+	this.initialize(img.graphics4);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,45,71);
 
 
-(lib.Растровоеизображение40 = function() {
-	this.initialize(img.Растровоеизображение40);
+(lib.graphics40 = function() {
+	this.initialize(img.graphics40);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,438,512);
 
 
-(lib.Растровоеизображение41 = function() {
-	this.initialize(img.Растровоеизображение41);
+(lib.graphics41 = function() {
+	this.initialize(img.graphics41);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,356,572);
 
 
-(lib.Растровоеизображение42 = function() {
-	this.initialize(img.Растровоеизображение42);
+(lib.graphics42 = function() {
+	this.initialize(img.graphics42);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,438,526);
 
 
-(lib.Растровоеизображение43 = function() {
-	this.initialize(img.Растровоеизображение43);
+(lib.graphics43 = function() {
+	this.initialize(img.graphics43);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,393,481);
 
 
-(lib.Растровоеизображение44 = function() {
-	this.initialize(img.Растровоеизображение44);
+(lib.graphics44 = function() {
+	this.initialize(img.graphics44);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,348,466);
 
 
-(lib.Растровоеизображение45 = function() {
-	this.initialize(img.Растровоеизображение45);
+(lib.graphics45 = function() {
+	this.initialize(img.graphics45);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,352,460);
 
 
-(lib.Растровоеизображение46 = function() {
-	this.initialize(img.Растровоеизображение46);
+(lib.graphics46 = function() {
+	this.initialize(img.graphics46);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,386,513);
 
 
-(lib.Растровоеизображение5 = function() {
-	this.initialize(img.Растровоеизображение5);
+(lib.graphics5 = function() {
+	this.initialize(img.graphics5);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,45,71);
 
 
-(lib.Растровоеизображение51 = function() {
-	this.initialize(img.Растровоеизображение51);
+(lib.graphics51 = function() {
+	this.initialize(img.graphics51);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,40,34);
 
 
-(lib.Растровоеизображение52 = function() {
-	this.initialize(img.Растровоеизображение52);
+(lib.graphics52 = function() {
+	this.initialize(img.graphics52);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,40,34);
 
 
-(lib.Растровоеизображение53 = function() {
-	this.initialize(img.Растровоеизображение53);
+(lib.graphics53 = function() {
+	this.initialize(img.graphics53);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,40,34);
 
 
-(lib.Растровоеизображение54 = function() {
-	this.initialize(img.Растровоеизображение54);
+(lib.graphics54 = function() {
+	this.initialize(img.graphics54);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,486,554);
 
 
-(lib.Растровоеизображение55 = function() {
-	this.initialize(img.Растровоеизображение55);
+(lib.graphics55 = function() {
+	this.initialize(img.graphics55);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,448,712);
 
 
-(lib.Растровоеизображение6 = function() {
-	this.initialize(img.Растровоеизображение6);
+(lib.graphics6 = function() {
+	this.initialize(img.graphics6);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,45,71);
 
 
-(lib.Растровоеизображение67 = function() {
-	this.initialize(img.Растровоеизображение67);
+(lib.graphics67 = function() {
+	this.initialize(img.graphics67);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,131,159);
 
 
-(lib.Растровоеизображение68 = function() {
-	this.initialize(img.Растровоеизображение68);
+(lib.graphics68 = function() {
+	this.initialize(img.graphics68);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,126,212);
 
 
-(lib.Растровоеизображение7 = function() {
-	this.initialize(img.Растровоеизображение7);
+(lib.graphics7 = function() {
+	this.initialize(img.graphics7);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,45,71);
 
 
-(lib.Растровоеизображение75 = function() {
-	this.initialize(img.Растровоеизображение75);
+(lib.graphics75 = function() {
+	this.initialize(img.graphics75);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,278,73);
 
 
-(lib.Растровоеизображение8 = function() {
-	this.initialize(img.Растровоеизображение8);
+(lib.graphics8 = function() {
+	this.initialize(img.graphics8);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,45,71);
 
 
-(lib.Растровоеизображение9 = function() {
-	this.initialize(img.Растровоеизображение9);
+(lib.graphics9 = function() {
+	this.initialize(img.graphics9);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,45,71);
 
@@ -352,15 +352,15 @@ p.nominalBounds = new cjs.Rectangle(0,0,511,610);
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(4));
 
 	// Layer 1
-	this.instance = new lib.Растровоеизображение26();
+	this.instance = new lib.graphics26();
 	this.instance.setTransform(0,-30);
 
-	this.instance_1 = new lib.Растровоеизображение27();
+	this.instance_1 = new lib.graphics27();
 
-	this.instance_2 = new lib.Растровоеизображение67();
+	this.instance_2 = new lib.graphics67();
 	this.instance_2.setTransform(-1,-1);
 
-	this.instance_3 = new lib.Растровоеизображение68();
+	this.instance_3 = new lib.graphics68();
 	this.instance_3.setTransform(37,-30);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).wait(1));
@@ -499,7 +499,7 @@ p.nominalBounds = new cjs.Rectangle(-1,-1,280.1,77);
 	this.initialize();
 
 	// Слой 1
-	this.instance = new lib.Растровоеизображение75();
+	this.instance = new lib.graphics75();
 
 	this.addChild(this.instance);
 }).prototype = p = new cjs.Container();
@@ -523,7 +523,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,32.5,32.5);
 	this.initialize();
 
 	// Слой 1
-	this.instance = new lib.Растровоеизображение39();
+	this.instance = new lib.graphics39();
 
 	this.addChild(this.instance);
 }).prototype = p = new cjs.Container();
@@ -534,7 +534,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,351,524);
 	this.initialize();
 
 	// Слой 1
-	this.instance = new lib.Растровоеизображение40();
+	this.instance = new lib.graphics40();
 
 	this.addChild(this.instance);
 }).prototype = p = new cjs.Container();
@@ -545,7 +545,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,438,512);
 	this.initialize();
 
 	// Слой 1
-	this.instance = new lib.Растровоеизображение41();
+	this.instance = new lib.graphics41();
 
 	this.addChild(this.instance);
 }).prototype = p = new cjs.Container();
@@ -556,7 +556,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,356,572);
 	this.initialize();
 
 	// Слой 1
-	this.instance = new lib.Растровоеизображение42();
+	this.instance = new lib.graphics42();
 
 	this.addChild(this.instance);
 }).prototype = p = new cjs.Container();
@@ -567,7 +567,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,438,526);
 	this.initialize();
 
 	// Слой 1
-	this.instance = new lib.Растровоеизображение46();
+	this.instance = new lib.graphics46();
 
 	this.addChild(this.instance);
 }).prototype = p = new cjs.Container();
@@ -578,7 +578,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,386,513);
 	this.initialize();
 
 	// Слой 1
-	this.instance = new lib.Растровоеизображение44();
+	this.instance = new lib.graphics44();
 
 	this.addChild(this.instance);
 }).prototype = p = new cjs.Container();
@@ -589,7 +589,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,348,466);
 	this.initialize();
 
 	// Слой 1
-	this.instance = new lib.Растровоеизображение43();
+	this.instance = new lib.graphics43();
 
 	this.addChild(this.instance);
 }).prototype = p = new cjs.Container();
@@ -600,7 +600,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,393,481);
 	this.initialize();
 
 	// Слой 1
-	this.instance = new lib.Растровоеизображение45();
+	this.instance = new lib.graphics45();
 
 	this.addChild(this.instance);
 }).prototype = p = new cjs.Container();
@@ -619,9 +619,9 @@ p.nominalBounds = new cjs.Rectangle(0,0,352,460);
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(2));
 
 	// Слой 1
-	this.instance = new lib.Растровоеизображение54();
+	this.instance = new lib.graphics54();
 
-	this.instance_1 = new lib.Растровоеизображение55();
+	this.instance_1 = new lib.graphics55();
 	this.instance_1.setTransform(18,-112.5);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).wait(1));
@@ -634,7 +634,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,486,554);
 	this.initialize();
 
 	// Слой 1
-	this.instance = new lib.Растровоеизображение53();
+	this.instance = new lib.graphics53();
 
 	this.addChild(this.instance);
 }).prototype = p = new cjs.Container();
@@ -645,7 +645,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,40,34);
 	this.initialize();
 
 	// Слой 1
-	this.instance = new lib.Растровоеизображение52();
+	this.instance = new lib.graphics52();
 
 	this.addChild(this.instance);
 }).prototype = p = new cjs.Container();
@@ -656,7 +656,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,40,34);
 	this.initialize();
 
 	// Слой 1
-	this.instance = new lib.Растровоеизображение51();
+	this.instance = new lib.graphics51();
 
 	this.addChild(this.instance);
 }).prototype = p = new cjs.Container();
@@ -675,9 +675,9 @@ p.nominalBounds = new cjs.Rectangle(0,0,40,34);
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(2));
 
 	// Слой 1
-	this.instance = new lib.Растровоеизображение37();
+	this.instance = new lib.graphics37();
 
-	this.instance_1 = new lib.Растровоеизображение38();
+	this.instance_1 = new lib.graphics38();
 	this.instance_1.setTransform(37,-31.1);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).wait(1));
@@ -698,9 +698,9 @@ p.nominalBounds = new cjs.Rectangle(0,0,490,589);
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(2));
 
 	// Слой 1
-	this.instance = new lib.Растровоеизображение33();
+	this.instance = new lib.graphics33();
 
-	this.instance_1 = new lib.Растровоеизображение34();
+	this.instance_1 = new lib.graphics34();
 	this.instance_1.setTransform(3,1);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).wait(1));
@@ -727,34 +727,34 @@ p.nominalBounds = new cjs.Rectangle(0,0,42,57);
 	mask.setTransform(26.5,41);
 
 	// Слой 2
-	this.instance = new lib.Растровоеизображение3();
+	this.instance = new lib.graphics3();
 	this.instance.setTransform(3,5.3);
 
-	this.instance_1 = new lib.Растровоеизображение4();
+	this.instance_1 = new lib.graphics4();
 	this.instance_1.setTransform(3,5.3);
 
-	this.instance_2 = new lib.Растровоеизображение5();
+	this.instance_2 = new lib.graphics5();
 	this.instance_2.setTransform(3,5.3);
 
-	this.instance_3 = new lib.Растровоеизображение6();
+	this.instance_3 = new lib.graphics6();
 	this.instance_3.setTransform(3,5.3);
 
-	this.instance_4 = new lib.Растровоеизображение7();
+	this.instance_4 = new lib.graphics7();
 	this.instance_4.setTransform(3,5.3);
 
-	this.instance_5 = new lib.Растровоеизображение8();
+	this.instance_5 = new lib.graphics8();
 	this.instance_5.setTransform(3,5.3);
 
-	this.instance_6 = new lib.Растровоеизображение9();
+	this.instance_6 = new lib.graphics9();
 	this.instance_6.setTransform(3,5.3);
 
-	this.instance_7 = new lib.Растровоеизображение10();
+	this.instance_7 = new lib.graphics10();
 	this.instance_7.setTransform(3,5.3);
 
-	this.instance_8 = new lib.Растровоеизображение11();
+	this.instance_8 = new lib.graphics11();
 	this.instance_8.setTransform(3,5.3);
 
-	this.instance_9 = new lib.Растровоеизображение12();
+	this.instance_9 = new lib.graphics12();
 	this.instance_9.setTransform(3,5.3);
 
 	this.instance.mask = this.instance_1.mask = this.instance_2.mask = this.instance_3.mask = this.instance_4.mask = this.instance_5.mask = this.instance_6.mask = this.instance_7.mask = this.instance_8.mask = this.instance_9.mask = mask;
@@ -816,7 +816,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,50.6,83.2);
 	this.initialize(mode,startPosition,loop,{});
 
 	// Слой 1
-	this.instance = new lib.Растровоеизображение25();
+	this.instance = new lib.graphics25();
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(2).to({scaleX:0.9,scaleY:0.9,x:4,y:5},0).wait(1));
 
@@ -828,7 +828,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,102,102);
 	this.initialize(mode,startPosition,loop,{});
 
 	// Слой 1
-	this.instance = new lib.Растровоеизображение24();
+	this.instance = new lib.graphics24();
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(2).to({scaleX:0.9,scaleY:0.9,x:4,y:5},0).wait(1));
 
@@ -840,7 +840,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,102,102);
 	this.initialize(mode,startPosition,loop,{});
 
 	// Слой 1
-	this.instance = new lib.Растровоеизображение23();
+	this.instance = new lib.graphics23();
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(2).to({scaleX:0.9,scaleY:0.9,x:5,y:5},0).wait(1));
 
@@ -852,7 +852,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,102,102);
 	this.initialize(mode,startPosition,loop,{});
 
 	// Слой 1
-	this.instance = new lib.Растровоеизображение22();
+	this.instance = new lib.graphics22();
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(2).to({scaleX:0.9,scaleY:0.9,x:3,y:4},0).wait(1));
 
@@ -869,7 +869,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,102,102);
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(2));
 
 	// Слой 2
-	this.instance_1 = new lib.Растровоеизображение21();
+	this.instance_1 = new lib.graphics21();
 	this.instance_1.setTransform(-39,-23.5);
 	this.instance_1._off = true;
 
@@ -883,12 +883,12 @@ p.nominalBounds = new cjs.Rectangle(0,0,511,610);
 	this.initialize(mode,startPosition,loop,{});
 
 	// Слой 1
-	this.instance = new lib.Растровоеизображение19();
+	this.instance = new lib.graphics19();
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(2));
 
 	// Слой 2
-	this.instance_1 = new lib.Растровоеизображение20();
+	this.instance_1 = new lib.graphics20();
 	this.instance_1.setTransform(-53.5,19);
 	this.instance_1._off = true;
 
@@ -1291,7 +1291,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,1252,647);
 	this.instance.setTransform(20,17,1,1,0,0,0,20,17);
 	this.instance.alpha = 0.02;
 
-	this.instance_1 = new lib.Растровоеизображение53();
+	this.instance_1 = new lib.graphics53();
 	this.instance_1.setTransform(1,1);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).wait(1));
@@ -1308,7 +1308,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,40,34);
 	this.instance.setTransform(20,17,1,1,0,0,0,20,17);
 	this.instance.alpha = 0.02;
 
-	this.instance_1 = new lib.Растровоеизображение52();
+	this.instance_1 = new lib.graphics52();
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).wait(1));
 
@@ -1324,7 +1324,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,40,34);
 	this.instance.setTransform(20,17,1,1,0,0,0,20,17);
 	this.instance.alpha = 0.02;
 
-	this.instance_1 = new lib.Растровоеизображение51();
+	this.instance_1 = new lib.graphics51();
 	this.instance_1.setTransform(1,1);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).wait(1));

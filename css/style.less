@@ -101,6 +101,9 @@ html {
 	min-height: 100%;
 	position: relative;
 }
+#canvas {
+	width: 100%;
+}
 html, body {
 	font-family: "Pribambas";
 	 -webkit-text-stroke: 1px rgba(0,0,0,0.3);
@@ -112,6 +115,31 @@ html, body {
 body {
 	padding: 0 0 260px;
 	min-width: 320px;
+}
+.cap {
+	display: none;
+	position: relative;
+	.cap-title {
+		font-size: 23px;
+	    color: #531600;
+	    font-family: 'Conv_Panton-BlackItalic';
+	    text-align: center;
+	    text-transform: uppercase;
+	}
+	span {
+	    position: absolute;
+        top: 50%;
+    	margin-top: -39px;
+	    &.ico-cap-left {
+	    	left: 0;
+	    }
+	    &.ico-cap-right {
+	    	right: 0;
+	    }
+	}
+	img {
+		width: 100%;
+	}
 }
 .ico {
 	background: url('../images/icons.png');
@@ -151,11 +179,25 @@ body {
 	background-position: -266px -137px;
 	width: 82px;
 	height: 82px;
+	position: fixed;
 }
+// .ico-scroll-gif {
+// 	background: url('../images/button_scroll2.gif');
+// }
 .ico-close-black {
 	background-position: 0px -186px;
 	width: 48px;
 	height: 48px;
+}
+.ico-cap-left {
+	background-position: -230px -319px;
+	width: 60px;
+	height: 133px;
+}
+.ico-cap-right {
+	background-position: -291px -319px;
+	width: 60px;
+	height: 133px;
 }
 header {
 	padding-top: 40px;
@@ -267,6 +309,12 @@ header {
 	    padding: 46px 28px;
     }
 }
+.ico-scroll {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	z-index: 5;
+}
 .content {
 	.el2 {
 		display: none;
@@ -292,12 +340,6 @@ header {
 	}
 	.shar {
 		display: none;
-	}
-	.ico-scroll {
-		position: absolute;
-		bottom: 22px;
-		left: 50%;
-		margin-left: -41px;
 	}
 	&.main-content {
 	    padding-bottom: 60px;
@@ -335,6 +377,129 @@ header {
 			background-size: 100% 100%;
 		    margin: 33px auto 27px;
 		    height: 55px;
+		    font-size: 40px;
+		    text-align: center;
+		}
+	}
+}
+.prizes-content {
+	.prize-items-2 {
+	    position: relative;
+		top: -40px;
+	}
+	.prize-item {
+		position: relative;
+		// width: 240px;
+	 //    height: 240px;
+	 //    border-radius: 50%;
+	 //    background: #fff;
+		img {
+			position: relative;
+			z-index: 2;
+		    top: -19px;
+		}
+		.prize-circle {
+		    // width: 240px;
+		    // height: 240px;
+		    // border-radius: 50%;
+		    // background: #fff;
+		    // display: block;
+		    // position: absolute;
+		    // top: 0;
+		}
+		.prize-img {
+		    width: 240px;
+		    height: 240px;
+		    border-radius: 50%;
+		    background: #fff;
+	        text-align: center;
+		}
+		.prize-text {
+			position: absolute;
+			font-size: 22px;
+			font-family: 'Conv_Panton-BlackItalic';
+			color: rgb(83, 22, 0);
+			font-style: italic;
+			text-transform: uppercase;
+			line-height: 1;
+			span {
+				font-size: 16px;
+				font-family: 'Conv_Panton-BlackItalic';
+				color: rgb(83, 22, 0);
+				font-style: italic;
+				text-transform: uppercase;
+				line-height: 1;
+				display: block;
+			    margin-top: 7px;
+			}
+		}
+		.left {
+			left: 0;
+		}
+		.right {
+			right: 0;
+		}
+		.top {
+			top: 0;
+		}
+		.bottom {
+			bottom: 0;
+		}
+	}
+	.prize-img-center {
+		margin: 0 auto;
+	}
+	.prize-item-2-left {
+		padding-left: 115px;
+	}
+	.prize-item-2-right {
+		padding-right: 115px;
+	}
+	.prize-item1 {
+		.prize-circle {
+			left: 0;
+		}
+		.prize-img {}
+	}
+	.prize-item2 {
+		.prize-circle {
+			left: 50%;
+			margin-left: -120px;
+		}
+		.prize-img {
+			margin: 0 auto;
+		}
+		.prize-text {
+			width: 100%;
+			left: 0;
+			text-align: center;
+			margin-top: 10px;
+		}
+	}
+	.prize-item3 {
+		.prize-circle {
+			right: 0;
+		}
+		.prize-img {
+			float: right;
+		}
+	}
+	.prize-item4 {
+		.prize-text {
+		    left: 14%;
+		    bottom: 15%;
+		}
+		img {
+		    top: -41px;
+		}
+	}
+	.prize-item5 {
+		.prize-text {
+		    right: 14%;
+		    bottom: 15%;
+		}
+		img {
+		    top: 0px;
 		}
 	}
 }
@@ -758,7 +923,7 @@ footer {
 		margin-bottom: 9px;
 		margin-left: 16px;
 	}
-	input, .select-style {
+	input {
 		border: 0;
 		border-radius: 5px;
 		background-color: rgba(255, 255, 255, 1);
@@ -954,7 +1119,7 @@ form {
 	.form-group {
 		margin-bottom: 25px;
 	}
-	.form-control, .select-style {
+	.form-control {
 		height: 50px;
 		color: #531600;
 		font-size: 18px;
@@ -972,6 +1137,7 @@ form {
 	.birthday__select {
 		padding: 0 12px;
 		[class^="col-"] {
+			vertical-align: top;
 			padding: 0 3px;
 		}
 	}
@@ -1016,6 +1182,48 @@ form {
 	}
 }
 @media (max-width: 1200px) {
+	.prizes-content {
+		.prize-item {
+			.prize-img {
+				width: 190px;
+	    		height: 190px;
+	    	}
+			img {
+			    position: relative;
+			    z-index: 2;
+			    top: -19px;
+			    max-height: 120%;
+			    max-width: 100%;
+			}
+		}
+		.prize-item-2-left {
+		    padding-left: 100px;
+		}
+		.prize-item-2-right {
+		    padding-right: 100px;
+		}	
+		.prize-items-2 {
+		    position: relative;
+		     top: 40px; 
+		}
+		.prize-item .right {
+		    right: -49px;
+		}
+		.prize-item .left {
+		    left: -32px;
+		}
+		.prize-item4 .prize-text {
+		    left: 5%;
+		    bottom: 15%;
+		}
+		.prize-item5 .prize-text {
+		    right: 5%;
+		    bottom: 15%;
+		}
+		.prize-item2 .prize-text {
+		    margin-top: 20px;
+		}
+	}
 	.content {
 		.form-registration {
 			margin-top: 60px;
@@ -1078,6 +1286,48 @@ form {
 		}
 	}
 }
+@media (max-width: 1000px) {
+
+}
+@media (max-width: 960px) {
+	.prizes-content {
+		.prize-item4 img {
+		    top: -41px;
+		}
+		.prize-item5 img {
+		    top: 0px;
+		}
+		.prize-item {
+		    .prize-text {
+		    	right: initial;
+			    display: block;
+			    width: 100%;
+			    text-align: center;
+			    left: initial;
+			    margin-top: 20px;
+			    top: inherit;
+			    bottom: inherit;	
+			    position: relative;		    
+		    }
+			.prize-img {
+			    width: 240px;
+			    height: 240px;
+			    margin: 0 auto;
+			    float: none;
+			}
+		}
+		.prize-items-2 {
+		    top: initial;
+    		margin-top: 50px;
+		}
+		.prize-item-2-right {
+		    padding-right: 0;
+		}
+		.prize-item-2-left {
+		    padding-left: 0;
+		}
+	}
+}
 @media (min-width: 768px) and (max-width: 960px) {
 	.container {
 	    width: 100%;
@@ -1098,6 +1348,21 @@ form {
 	}
 }
 @media (max-width: 767px) {
+	.prizes-content .prize-item .prize-text {
+	    right: initial;
+	    display: block;
+	    width: 100%;
+	    text-align: center;
+	    left: initial;
+	    margin-top: 20px;
+	    top: inherit;
+	    bottom: inherit;
+	    position: relative;
+	    margin-bottom: 30px;
+	}
+	.prizes-content {
+		padding-bottom: 0!important;
+	}
 	.content-box {
 		&:before {
 			width: 100%;

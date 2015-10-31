@@ -85,7 +85,6 @@
 
 		function handleImageLoad() {
 		preloaderCount++;
-		 
 		}
 
 		function handleProgress(){
@@ -93,7 +92,6 @@
 				preload1.x = Math.round(loader.progress*100)*4.2-8;		
 				stage.update();
 			}
-			
 			//stage.update();
 		}
 
@@ -102,6 +100,8 @@
 		}
 
 		function handleComplete(evt) {
+			console.log ('113');
+			 $('html,body').stop().animate({ scrollTop: $('#canvas').offset().top }, 1000);
 			exportRoot = new lib.MM5();
 			
 			stage.removeChild(preload0);

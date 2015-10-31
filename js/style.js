@@ -57,6 +57,11 @@ $(document).ready(function() {
 		$('.cap').hide();
 		$('#canvas').show();
 	}
+	 var element = $('.ico-scroll');
+    $(window).scroll(function(){
+        element['fade'+ ($(this).scrollTop() > 200 ? 'Out': 'In')](500);    
+    });
+
 });
 $(window).load(function() {
 	heigFooter = $('footer').outerHeight();
