@@ -50,17 +50,44 @@ $(document).ready(function() {
 		}
 		jQuery(this).parents('.navigation__wrapper').find('.header-nav').toggleClass('active');
 	});
-	if(window.innerHeight > window.innerWidth){
-	    $('.cap').show();
-	    $('#canvas').hide();
+	if (window.innerHeight > window.innerWidth) {
+		$('.cap').show();
+		$('#canvas').hide();
 	} else {
 		$('.cap').hide();
 		$('#canvas').show();
 	}
-	 var element = $('.ico-scroll');
-    $(window).scroll(function(){
-        element['fade'+ ($(this).scrollTop() > 200 ? 'Out': 'In')](500);    
-    });
+	var element = $('.ico-scroll');
+	$(window).scroll(function() {
+		element['fade' + ($(this).scrollTop() > 200 ? 'Out' : 'In')](500);
+	});
+
+
+	var ageChangeModal = jQuery('#ageChange');
+	var ageChangeErrorModal = jQuery('#ageChangeError');
+
+	ageChangeErrorModal.modal({
+		keyboard: false,
+		show: false,
+		backdrop: 'static',
+	});
+	ageChangeModal.modal({
+		keyboard: false,
+		backdrop: 'static',
+	});
+
+
+	ageChangeModal.find('form').on('submit', function(event) {
+		event.preventDefault();
+
+		if ((2015 - jQuery(this).find('#years').val()) >= 12) {
+			ageChangeModal.modal('hide');
+		} else {
+			ageChangeModal.modal('hide').on('hidden.bs.modal', function(e) {
+				ageChangeErrorModal.modal('show');
+			});
+		}
+	});
 
 });
 $(window).load(function() {
@@ -70,9 +97,9 @@ $(window).load(function() {
 $(window).resize(function() {
 	heigFooter = $('footer').outerHeight();
 	$('body').css('paddingBottom', heigFooter);
-	if(window.innerHeight > window.innerWidth){
-	    $('.cap').show();
-	    $('#canvas').hide();
+	if (window.innerHeight > window.innerWidth) {
+		$('.cap').show();
+		$('#canvas').hide();
 	} else {
 		$('.cap').hide();
 		$('#canvas').show();
