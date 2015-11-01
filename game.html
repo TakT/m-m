@@ -123,7 +123,8 @@
 		}
 
 		function keyPressed(event) {
-		    //alert (event.keyCode)
+            event.preventDefault();
+
 		     switch(event.keyCode) {
 		        case 37:
 		           exportRoot.keyLEFT = true;
@@ -144,7 +145,8 @@
 		}
 
 		function keyPressedup(event) {
-		      //alert (up)
+            event.preventDefault();
+            
 		     switch(event.keyCode) {
 		        case 37:
 		           exportRoot.keyLEFT = false;

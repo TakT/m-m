@@ -103,6 +103,9 @@ createjs.Touch.enable(stage);
 }
 
 function keyPressed(event) {
+
+    event.preventDefault();
+
     //alert (event.keyCode)
      switch(event.keyCode) {
         case 37:
@@ -118,13 +121,17 @@ function keyPressed(event) {
            exportRoot.keyDOWN = true;            
             break;
     }
-    
+
     //update the stage after keypress
     stage.update();
 }
 
 function keyPressedup(event) {
       //alert (up)
+
+
+    event.preventDefault();
+
      switch(event.keyCode) {
         case 37:
            exportRoot.keyLEFT = false;
@@ -139,7 +146,7 @@ function keyPressedup(event) {
            exportRoot.keyDOWN = false;            
             break;
     }
-    
+
     //update the stage after keypress
     stage.update();
 }
