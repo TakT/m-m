@@ -1212,8 +1212,15 @@ form {
 	    	width: 740px;
 	    }
 	}
+	.ico-scroll {
+		display: none;
+	}
 }
-
+@media (max-width: 768px) {
+	span.ico-scroll {
+		display: none!important;
+	}
+}
 @media (min-width: 960px) {
 	.container {
 		width: 900px;
@@ -1318,7 +1325,7 @@ form {
 		}
 	    .footer-slider {
 	    	.block-footer-slider {
-				padding: 40px;
+				padding: 40px 40px 0;
 				.slider-text {
 					font-size: 16px;
 					&.left {
@@ -1386,6 +1393,16 @@ form {
 		}
 	}
 }
+@media (min-width: 767px) and (max-width: 890px) {
+	footer {
+		.footer-slider {
+			width: 61%;
+		}
+		.footer_block_text {
+			width: 39%;
+		}
+	}
+}
 @media (min-width: 768px) and (max-width: 960px) {
 	.container {
 	    width: 100%;
@@ -1406,6 +1423,9 @@ form {
 	}
 }
 @media (max-width: 767px) {
+	.modal .sms__code ul li label {
+	    margin-bottom: 10px;
+	}
 	.prizes-content .prize-item .prize-text {
 	    right: initial;
 	    display: block;
@@ -1430,7 +1450,7 @@ form {
 	}
 	.modal .social__title,
 	.modal legend {
-		font-size: 47px;
+		font-size: 31px;
 	}
 	.modal {
 		.modal-header .close {
@@ -1572,9 +1592,6 @@ form {
 			.btn-red {
 				margin-left: auto;
 			}
-		}
-		.ico-scroll {
-			display: none;
 		}
 		.el {
 			width: 200px;
