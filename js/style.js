@@ -2,6 +2,9 @@ $(document).ready(function() {
 	$('.block-footer-slider').slick({
 		slidesToShow: 3,
 		slidesToScroll: 3,
+		autoplay: true,
+  		autoplaySpeed: 5000,
+  		speed: 800,
 		responsive: [{
 			breakpoint: 1200,
 			settings: {
