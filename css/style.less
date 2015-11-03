@@ -199,6 +199,11 @@ body {
 	width: 60px;
 	height: 133px;
 }
+.ico-notification {
+	background-position: -59px -372px;
+	width: 24px;
+	height: 24px;
+}
 header {
 	padding-top: 40px;
 	.navigation__wrapper {
@@ -241,10 +246,100 @@ header {
 				border: 0;
 			}
 		}
+		.ico-notification {
+			position: relative;
+			display: inline-block;
+			margin-right: 9px;
+			top: 4px;
+			cursor: pointer;
+			.block-notification {
+				display: none;
+				position: absolute;
+				padding: 0px 26px;
+				background: #fff;
+				width: 430px;
+				border-radius: 19px;
+				bottom: -201px;
+				left: 50%;
+				margin-left: -215px;
+				z-index: 999;
+				&:before {
+					content: "";
+					position: absolute;
+					top: -12px;
+					left: 50%;
+					margin-left: -12px;
+					width: 0;
+					height: 0;
+					border-style: solid;
+					border-width: 0 12px 12px 12px;
+					border-color: transparent transparent #ffffff transparent;
+				}
+				p {
+					font-size: 14px;
+					font-family: 'Panton-BoldItalic';
+					color: rgb(83, 22, 0);
+					text-transform: uppercase;
+					line-height: 1.429;
+					text-align: center;
+					padding: 20px 0;
+					margin-bottom: 0;
+					a {
+						font-family: 'Conv_Panton-BlackItalic';
+						font-size: 14px;
+						color: rgb(83, 22, 0);
+						text-transform: uppercase;
+						line-height: 1.429;
+						text-decoration: underline;
+						&:hover {
+							text-decoration: none;
+						}
+					}
+					&.border-b {
+						background: url('../images/notifical_border.png') 0 100%;
+						background-repeat: no-repeat;
+					}
+				}
+			}
+		}
 	}
 }
 .container {
 	position: relative;
+}
+.containerError {
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	h1 {
+		font-size: 180px;
+		font-family: "Pribambas";
+		color: rgb(83, 22, 0);
+		text-transform: uppercase;
+		line-height: 180px;
+		margin-top: 20px;
+	}
+	span {
+		font-size: 60px;
+		font-family: "Pribambas";
+		color: rgb(83, 22, 0);
+		text-transform: uppercase;
+		line-height: 60px;
+	    margin-top: 23px;
+    	display: block;
+	}
+	p {
+		font-size: 20px;
+		font-family: 'Panton-SemiBoldItalic';
+		color: rgb(83, 22, 0);
+		line-height: 1.2;
+		margin-top: 38px;
+	}
+	.btn-red {
+		margin-top: 38px;
+		display: block;
+    	padding: 46px 22px;
+	}
 }
 @media (min-width: 1300px) {
 	.container {
@@ -440,6 +535,7 @@ input.error {
 			background-size: 100% 100%;
 		    margin: 33px auto 27px;
 		    height: 55px;
+		    line-height: 55px;
 		    font-size: 40px;
 		    text-align: center;
 		}
@@ -1440,6 +1536,19 @@ form {
 	.modal .sms__code ul li label {
 	    margin-bottom: 10px;
 	}
+	.containerError {
+		width: 100%;
+		max-width: 1000px;
+		margin: 0 auto;
+	    text-align: center;
+		img {
+			max-width: 100%;
+			margin-top: 20px;
+		}
+		.btn-red {
+		    margin: 20px auto 20px;
+		}
+}
 	.prizes-content .prize-item .prize-text {
 	    right: initial;
 	    display: block;

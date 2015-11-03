@@ -35,7 +35,10 @@ $(document).ready(function() {
 		checkboxClass: 'icheckbox_minimal',
 		increaseArea: '20%' // optional
 	});
-
+	jQuery('.ico-notification').on('click', function() {
+		console.log('qwqwewqe');
+		$('.block-notification').fadeToggle();
+	});
 	jQuery('.js-menu__switch-link').on('click', function(event) {
 		event.preventDefault();
 
@@ -89,6 +92,12 @@ $(document).ready(function() {
 		}
 	});
 
+});
+$(document).click( function(event){
+  if( ($(event.target).closest(".block-notification").length) || ($(event.target).closest(".ico-notification").length) ) 
+    return;
+  $(".block-notification").fadeOut("slow");
+  event.stopPropagation();
 });
 $(window).load(function() {
 	heigFooter = $('footer').outerHeight();
