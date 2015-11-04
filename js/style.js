@@ -94,6 +94,7 @@ $(document).ready(function() {
 			});
 		}
 	});
+	
 
 });
 $(document).click( function(event){
@@ -116,4 +117,23 @@ $(window).resize(function() {
 		$('.cap').hide();
 		$('#canvas').show();
 	}
+});
+//рандомная загрузка
+
+    function sluchay(){
+        var MyRND  = Math.random() * 3;
+        var MyRND = Math.round (MyRND);
+        return MyRND;
+        console.log(MyRND);
+    }    
+/*end ready*/
+$(document).ready(function() {
+	console.log(sluchay());
+	if (sluchay()==1) {
+		$('.m-red').addClass('m-disp');
+		$('.el2').addClass('m-disp');
+	} else {
+		$('.m-yellow').addClass('m-disp');
+		$('.yellow2').addClass('m-disp');
+	};
 });

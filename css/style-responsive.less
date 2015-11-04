@@ -26,13 +26,31 @@
 				padding: 0;
 				position: relative;
 			}
+			.m-red, .m-yellow {
+				display: none;
+			}
+			.el2, .yellow2 {
+				display: none;
+			}
 			.el2 {
-				display: block;
 			    width: 317px;
 			    margin: 0 auto;
 			    position: absolute;
 			    left: 50%;
 			    margin-left: -120px;
+			    &.m-disp {
+					display: block;
+				}
+			}
+			.yellow2 {
+			    width: 309px;
+			    margin: 0 auto;
+			    position: absolute;
+			    left: 50%;
+			    margin-left: -120px;
+			    &.m-disp {
+					display: block;
+				}
 			}
 			.shar {
 			    display: block;

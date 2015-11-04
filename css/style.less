@@ -259,7 +259,7 @@ header {
 				background: #fff;
 				width: 430px;
 				border-radius: 19px;
-				top: 40px;
+				top: 40px;	
 				left: 50%;
 				margin-left: -215px;
 				z-index: 999;
@@ -473,7 +473,10 @@ input.error {
 	z-index: 20;
 }
 .content {
-	.el2 {
+	.el2, .yellow2 {
+		display: none;
+	}
+	.m-red, .m-yellow {
 		display: none;
 	}
 	.el {
@@ -487,13 +490,18 @@ input.error {
 		left: 27px;
 		top: 35px;
 		z-index: 2;
+		&.m-disp {
+			display: block;
+		}
 	}
 	.m-yellow {
 		position: relative;
 		left: 27px;
 		top: 35px;
 		z-index: 2;
-		display: none;
+		&.m-disp {
+			display: block;
+		}
 	}
 	.shar {
 		display: none;
@@ -1413,9 +1421,11 @@ form {
 			text-align: right;
 			font-size: 60px;
 		}
-		.m-yellow,
 		.m-red {
 			width: 400px;
+		}
+		.m-yellow {
+			width: 320px;
 		}
 		&.main-content .shar {
 			width: 240px;
@@ -1527,8 +1537,11 @@ form {
 	    z-index: 1;
 	    width: 122%;
 	}
-	.content .m-yellow, .content .m-red {
+	.content .m-red {
 	    width: 363px;
+	}
+	.content .m-yellow {
+	    width: 302px;
 	}
 }
 @media (max-width: 767px) {
@@ -1700,6 +1713,7 @@ form {
 			.shar {
 				width: 170px;
 				right: 0;
+				bottom: -68px;
 			}
 		}
 		.title_form_registration {
@@ -1719,8 +1733,12 @@ form {
 		.el {
 			width: 200px;
 		}
-		.m-red, .m-yellow {
+		.m-red {
 			width: 240px;
+			left: -26px;
+		}
+		.m-yellow {
+			width: 212px;
 			left: -26px;
 		}
 	}
